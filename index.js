@@ -2,10 +2,7 @@ const commando = require("discord.js-commando");
 const bot = new commando.Client();
 const TOKEN = "NDk1NjY2NDQxMzc5NjQzNDI1.Dt-fiA.FKsuqZFUbmt0Dcr0ex2LdQcTsLM"
 
-bot.registry.registerGroup('simple', 'simple');
-bot.registry.registerGroup('music', 'music');
-bot.registry.registerCommandsIn(__dirname + "/commands");
-bot.registry.registerDefaults();
+
 bot.on("message", function(message){
     if(message.content == "hello")
     {
