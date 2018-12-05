@@ -8,6 +8,28 @@ bot.registry.registerCommandsIn(__dirname + "/commands");
 bot.registry.registerDefaults();
 
 bot.on("message", function(message){
+    if(message.content == "hi")
+    {
+        message.reply("hi")
+    }
+    })
+
+    bot.on("message", function(message){
+        if(message.content == "Hello")
+        {
+            message.reply("hi")
+        }
+        })
+
+        bot.on("message", function(message){
+            if(message.content == "HELLO")
+            {
+                message.reply("hi")
+            }
+            })
+
+
+bot.on("message", function(message){
     if(message.content == "hello")
     {
         message.reply("hi")
